@@ -21,6 +21,8 @@
   },
   "dependencies": {
     "jquery": "^3.5.1",
-    "postcss": "^7.0.32"
+    "postcss": "^7.0.32",
+    "postcss-scss": "^2.1.1",
+    "sass-autoprefixer": "^1.0.1"
   }
 }
