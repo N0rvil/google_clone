@@ -1,7 +1,5 @@
 .usernavbar__box {
-    width: 30rem;
-    border: 1px solid $color-grey-light-1;
-    border-radius: .8rem;
+    width: 28rem;
 }
 
 
@@ -17,9 +15,11 @@
     }
 
     &__item {
-        margin-bottom: 2.2rem;
+        &:hover {
+            background-color: $color-grey-light-2;
+            border-radius: .75rem;
+        }
     }
-
     &__href {
         text-decoration: none;
         color: $color-text;
@@ -31,11 +31,13 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;;
+        height: 9rem;
+        width: 7rem;
     }
 
     &__logo {
-        height: 4.1rem;
-        width: 4.1rem;
+        height: 3.6rem;
+        width: 3.6rem;
     }
 
     &__text {
@@ -45,14 +47,27 @@
         font-weight: 400;
     }
 
+
 }
 
 .frame {
+    padding: .2rem;
     height: 40rem;
+    width: 30rem;
     position: absolute;
     top: 6rem;
     right: 4.5rem;
+    border: 1px solid $color-grey-light-1;
+    border-radius: .8rem;
+    box-shadow: 0 0 .8rem #CCC;
+    display: none;
+    overflow: scroll !important;
 }
+
+.line {
+   border: 1px solid $color-grey-light-1;
+}
+
 
 
 .search {
@@ -64,18 +79,17 @@
     margin-top: -2rem;
 
     &__input {
-        width: 40%;
+        width: 30%;
         height: 4.6rem;
         border-radius: 100px;
-        border: 1px solid $color-grey-light-1;
+        border: none;
         margin-left: -4rem; //moving with the placeholder and icon 
         padding-left: 5rem; //moving with the placeholder and icon
         font-family: inherit;
         font-weight: 400;
+        box-shadow: 0 0 .8rem #CCC;
+        font-size: 1.4rem;
 
-        &:hover {
-            box-shadow: 0 0 .7rem #ccc;
-        }
 
         &:focus {
             outline: none;
@@ -98,20 +112,19 @@
     }
 
     &__icon-glass {
-        height: 1.7rem;
-        width: 1.7rem;
+        height: 1.8rem;
+        width: 1.8rem;
         background-color: $color-white;
         fill: $color-text;
         position: relative;
         z-index: 10;
-        margin-bottom: 1.2rem;
+        margin-bottom: 1.4rem;
 
     }
 
     &__icon-mic {
-        height: 2.2rem;
+        height: 1.85rem;
         margin-left: -5rem;
-        margin-top: .5rem;
         margin-bottom: 1.7rem;
     }
 }
@@ -124,8 +137,9 @@
     }
 
     &__section:not(:last-child) {
-        margin-bottom: 1rem;
+        margin-bottom: 2.5rem;
     }
+
 
     &__href {
         text-decoration: none;
@@ -137,7 +151,17 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 10rem;
     }
+    &__content:hover {
+        background-color: $color-grey-light-2;
+        border-radius: .5rem;
+
+        .pages__page { //the background color of the circle get darker
+            background-color: #e2e2e2;
+        }
+    }
+
 
     &__page:not(:last-child) {
         margin: 1.2rem 2.8rem 1rem 2.8rem;
@@ -145,8 +169,8 @@
 
     &__page {
         background-color: $color-grey-light-2;
-        height: 4rem;
-        width: 4rem;
+        height: 5rem;
+        width: 5rem;
         margin: 2.8rem 2.8rem 1rem 2rem;
         border-radius: 1000px;
         display: flex;
@@ -154,13 +178,57 @@
         justify-content: center;
     }
 
+
     &__text {
         font-size: 1.4rem;
-        font-weight: 500;
+        font-weight: 400;
+        color: $color-black;
     }
 
     &__logo {
         height: 2.3rem;
         width: 2.5rem;
+    }
+}
+
+.account {
+    border-radius: 50%;
+}
+
+.btn {
+    width: 11.2rem;
+    height: 3.2rem;
+    border-radius: 1000px;
+    border: none;
+    box-shadow: .1rem .1rem .2rem $color-text;
+    background-color: $color-white;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        background-color: #CCDAF4;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__icon {
+        width: 1.8rem;
+        height: 1.8rem;
+        margin-right: -.5rem;
+    }
+
+    &__text {
+        width: 8.5rem;
+        height: 1.4rem;
+        color: #1A73E8;
+        font-size: 1.2rem;
     }
 }

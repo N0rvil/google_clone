@@ -28,6 +28,20 @@ body {
     color: $color-text;
 }
 
+body::-webkit-scrollbar {
+    width: .8rem;
+  }
+   
+  body::-webkit-scrollbar-track {
+    background: white;
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: $color-grey-light-1;
+    border-radius: .5rem;
+  }
+
+
 
 
 
