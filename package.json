@@ -28,5 +28,13 @@
     "postcss-scss": "^2.1.1",
     "postcss-use": "^3.0.0",
     "sass-autoprefixer": "^1.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N0rvil/google_clone.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/N0rvil/google_clone.github.io/issues"
+  },
+  "homepage": "https://github.com/N0rvil/google_clone.github.io#readme"
 }
