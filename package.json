@@ -20,9 +20,13 @@
     "postcss-cli": "^4.1.1"
   },
   "dependencies": {
+    "all": "0.0.0",
+    "compile-sass": "^1.1.1",
+    "compression": "^1.7.4",
     "jquery": "^3.5.1",
     "postcss": "^7.0.32",
     "postcss-scss": "^2.1.1",
+    "postcss-use": "^3.0.0",
     "sass-autoprefixer": "^1.0.1"
   }
 }
