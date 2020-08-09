@@ -11,10 +11,11 @@
         <ul class="navbar__container">
             <li class="navbar__item"><a href="#" class="navbar__gmail">Gmail</a></li>
             <li class="navbar__item"><a href="#" class="navbar__photos">Images</a></li>
-            <li class="navbar__item"><a href="#" class="navbar__item-bg1"><img src="img/Frame_1_1.svg" alt="Icon" class="navbar__icon" id="frame"></a></li>
-            <li class="navbar__item"><a href="#" class="navbar__item-bg2"><img src="img/profile.png" alt="User photo" class="navbar__user-photo"></a></li>
+            <li class="navbar__item" id="frame"><a href="#" class="navbar__item-bg1"><img src="img/Frame_1_1.svg" alt="Icon" class="navbar__icon"></a></li>
+            <li class="navbar__item" id="user"><a href="#" class="navbar__item-bg2"><img src="img/profile.png" alt="User photo" class="navbar__user-photo"></a></li>
         </ul>
-            <iframe src="user_nav.html" frameborder="1" class="frame" id="user__nav"></iframe>
+            <iframe src="user_nav.html" frameborder="1" class="frame__nav" id="user__nav"></iframe>
+            <iframe src="user_profile.html" frameborder="1" class="frame__info" id="user__profile"></iframe>
     </nav>
 
     <div class="logo">
@@ -50,24 +51,40 @@
             <a href="#" class="pages__href"><div class="pages__content"><div class="pages__page"><img src="img/steam_logo.png" alt="" class="pages__logo"></div><span class="pages__text">Steam</span></div></a>
         </div>
     </div>
-        
+    
+    <a href="#">
     <button class="btn">
         <div class="btn__content">
             <img src="img/pen_icon.png" alt="pen-icon" class="btn__icon">
             <span class="btn__text">Customize</span>
         </div>
     </button>
+    </a>
 
     <script>
         const frame = document.querySelector("#frame");
         const user__nav = document.querySelector("#user__nav");
-        let isOpened = false;
+        let isMenuOpened = false;
         frame.onclick = () => {
-            isOpened = !isOpened
-            if (isOpened) {
+            isMenuOpened = !isMenuOpened
+            if (isMenuOpened) {
+                user__profile.style.display = "none"
                 user__nav.style.display = "block"
             } else {
                 user__nav.style.display = "none"
+            }
+        }
+
+        const user = document.querySelector("#user");
+        const user__profile = document.querySelector("#user__profile");
+        let isProfileOpened = false;
+        user.onclick = () => {
+            isProfileOpened = !isProfileOpened
+            if (isProfileOpened) {
+                user__nav.style.display = "none"
+                user__profile.style.display = "block"
+            } else {
+                user__profile.style.display = "none"
             }
         }
     </script>
