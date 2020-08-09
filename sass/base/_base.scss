@@ -1,34 +1,39 @@
-$color-black: #000;
-$color-white: #fff;
-$color-text: #808080;
-$color-grey-light-1: #D3D3D3;
-$color-grey-light-2: #F0F0F0;
-
-
-
 * {
     margin: 0;
     padding: 0;
-}
-
-*, *::before, *::after {
+  }
+  
+  *, *::before, *::after {
     box-sizing: inherit;
-}
-
-html {
+  }
+  
+  html {
     box-sizing: border-box;
     font-size: 62.5%; //1rem = 10px
     font-family: 'Segoe UI', 'Roboto', arial, sans-serif;
-}
 
-body {
+
+    @include respond(tab-port) {
+        font-size: 55%;
+    }
+
+    @include respond(big-desktop) {
+        font-size: 85%;
+    }
+
+    
+
+      
+  }
+
+  body {
     font-family: 'Segoe UI', 'Roboto', arial, sans-serif;
     font-weight: 400;
     line-height: 1.6;
     color: $color-text;
-}
-
-body::-webkit-scrollbar {
+  }
+  
+  body::-webkit-scrollbar {
     width: .8rem;
   }
    
@@ -41,9 +46,8 @@ body::-webkit-scrollbar {
     border-radius: .5rem;
   }
 
-
-
-
-
+  .account {
+      border-radius: 50%;
+  }
 
 

@@ -1,0 +1,68 @@
+.pages {
+    &__section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__section:not(:last-child) {
+        margin-bottom: 2.5rem;
+    }
+
+
+    &__href {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 10rem;
+    }
+    &__content:hover {
+        background-color: $color-grey-light-2;
+        border-radius: .5rem;
+
+        .pages__page { //the background color of the circle get darker
+            background-color: #e2e2e2;
+        }
+    }
+
+
+    &__page:not(:last-child) {
+        margin: 1.2rem 2.8rem 1rem 2.8rem;
+    }
+
+    &__page {
+        background-color: $color-grey-light-2;
+        height: 5rem;
+        width: 5rem;
+        margin: 2.8rem 2.8rem 1rem 2rem;
+        border-radius: 1000px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        word-wrap: break-word;
+
+        @include respond(phone) {
+            height: 3rem; 
+            width: 3rem;
+        }
+    }
+
+
+    &__text {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: $color-black;
+        text-align: center;
+    }
+
+    &__logo {
+        height: 2.3rem;
+        width: 2.5rem;
+    }
+}

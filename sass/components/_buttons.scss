@@ -1,0 +1,44 @@
+.btn {
+    width: 11.2rem;
+    height: 3.2rem;
+    border-radius: 1000px;
+    border: none;
+    box-shadow: .1rem .1rem .2rem $color-text;
+    background-color: $color-white;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        background-color: #CCDAF4;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__icon {
+        width: 1.8rem;
+        height: 1.8rem;
+        margin-right: -.5rem;
+    }
+
+    &__text {
+        width: 8.5rem;
+        height: 1.4rem;
+        color: #1A73E8;
+        font-size: 1.2rem;
+    }
+
+    @include respond(tab-port) {
+        left: 50%;
+        bottom: 50%;
+        margin-left: -7.2rem;
+        transform: scale(1.5);
+    }
+}
