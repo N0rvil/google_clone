@@ -128,7 +128,7 @@ body::-webkit-scrollbar-thumb {
   @media (max-width: 56.25em) {
     .btn {
       left: 50%;
-      bottom: 15%;
+      bottom: 10%;
       margin-left: -7.2rem;
       transform: scale(1.5); } }
 
