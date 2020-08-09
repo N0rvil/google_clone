@@ -329,13 +329,17 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   height: 23.3rem;
   margin-bottom: 2rem; }
+  @media (max-width: 37.5em) {
+    .logo {
+      height: 15rem; } }
   .logo__content {
     transform: scale(0.5);
     padding-top: 10.9rem;
     width: 55rem; }
     @media (max-width: 37.5em) {
       .logo__content {
-        width: 40rem; } }
+        width: 40rem;
+        padding-top: 4rem; } }
 
 .search {
   display: flex;

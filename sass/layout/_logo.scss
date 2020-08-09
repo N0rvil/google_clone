@@ -5,13 +5,18 @@
     height: 23.3rem;
     margin-bottom: 2rem;
 
+    @include respond(phone) {
+        height: 15rem;
+    }
+
     &__content {
         transform: scale(.5);
         padding-top: 10.9rem;
         width: 55rem;
 
         @include respond(phone) {
-            width: 40rem; 
+            width: 40rem;
+            padding-top: 4rem; 
         }
     }
 }
