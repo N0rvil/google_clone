@@ -1,0 +1,47 @@
+.navbar {
+    &__container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        list-style: none;
+        margin-right: 2rem;
+    }
+    &__item > a {
+        display:inline-block; //important protože bez toho to nefunguje kurva
+        font-size: 1.25rem;
+        padding: 1rem;
+        text-decoration: none;
+        color: $color-black;
+        font-weight: 300;
+        
+        & > img {
+            float: left; //important
+        }
+    }
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+    }
+    &__gmail {
+        transform: translateY(-2.5px);
+    }
+    &__photos {
+        transform: translateY(-2.5px);
+    }
+    &__user-photo {
+        border-radius: 50%;
+    }  
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 23.3rem;
+
+    &__content {
+        transform: scale(.5);
+        padding-top: 10.9rem;
+    }
+}
