@@ -36,9 +36,7 @@
     }
 
     @include respond(tab-port) {
-        left: 50%;
-        bottom: 10%;
-        margin-left: -7.2rem;
-        transform: scale(1.5);
+        opacity: 0;
+        visibility: hidden;
     }
 }
